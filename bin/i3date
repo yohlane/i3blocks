@@ -1,0 +1,2 @@
+#!/bin/bash
+printf "<span font='FontAwesome 13' color='#e0e0e0' rise='-1500' >\uf0d9</span><span color='#000000' background='#e0e0e0' rise='500' > $(date '+%Y-%m-%d %H:%M:%S')<span font='FontAwesome 13' color='#000000' rise='-1500' >\uf0d9</span></span>"

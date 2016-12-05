@@ -1,0 +1,2 @@
+#!/bin/bash
+free -h | grep "Mem\|Swap"| awk '{print $3}' | paste -sd "/" -

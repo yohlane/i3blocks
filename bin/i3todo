@@ -1,0 +1,5 @@
+#!/bin/bash
+todo=$(head ~/.todo| sort | paste -sd ">" - | sed 's/>/ \<span font="13" rise="-1500"\ color="#000000" background="#9b3636">\\uf0d9\<\/span\>\<span font="13" color="#9b3636" rise="-1500"\ background="#000000">\\uf0d9\<\/span\> /g')
+if [ "$todo" ]; then
+    printf "<span font='FontAwesome 13' color='#9b3636' rise='-1500' >\uf0d9</span><span color='#dbdbdb' background='#9b3636' rise='500' > $todo <span font='FontAwesome 13' color='#000000' rise='-1500' >\uf0d9</span></span>"
+fi

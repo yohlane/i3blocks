@@ -1,0 +1,7 @@
+#!/bin/bash
+cIP=$(ip a | grep inet | grep -v 127 | head -1 | awk '{print $2}')
+if [ "$cIP" ]; then
+    printf "<span font='FontAwesome 13' color='#383838' rise='-1500' >\uf0d9</span><span color='#00ff00' background='#383838'><span font='FontAwesome'>\uf0e8 </span>$cIP<span font='FontAwesome 13' color='#000000' rise='-1500' >\uf0d9</span></span>"
+else
+    printf "<span font='FontAwesome 13' color='#383838' rise='-1500' >\uf0d9</span><span color='red' background='#383838'><span font='FontAwesome'>\uf0e8 </span><span font='FontAwesome 13' color='#000000' rise='-1500' >\uf0d9</span></span>"
+fi
